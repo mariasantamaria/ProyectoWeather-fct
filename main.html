@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tekne3d</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+ crossorigin=""></script>
+    <script src="js/menu.js"></script>
+    <script src="js/openWeatherAPIKey.js"></script>
+    <script src="js/index2.js"></script>
+</head>
+<body>
+    <header class="header inicio" id="inicio">
+        <i class='bx bx-menu-alt-right menu'></i>
+        
+        <nav class="menu-navegacion">
+            <i class='bx bx-menu-alt-right d' style="color: red;"></i>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicios</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Con tekne ¡impresiona!</h1>
+            <p class="copy">TEKNE 3D</p>
+        </div>
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">
+                Nuestro Servicio
+            </h2>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="servicie">
+                        <h3 class="n-service">
+                           <span class="number">1</span> 
+                        Impresión 3D
+                        </h3>
+                        <p>La impresión 3D de maquetas y prototipos te pemite evaluar aspectos estéticos o funcionales de tu producto.
+                        Imprimimos prototipos para exposición en ferias o showrooms.</p>
+                    </div>
+                    <div class="servicie">
+                        <h3 class="n-service">
+                           <span class="number">2</span> 
+                        Maquetas
+                        </h3>
+                        <p> En Tekné 3D conócemos de la importancia de ver materializado un proyecto por ello dedicamos un apartado a las maquetas de arquitectura. </p>
+                    </div>
+                    <div class="servicie">
+                        <h3 class="n-service">
+                           <span class="number">3</span> 
+                        Diseño 3D
+                        </h3>
+                        <p>Te ayudamos a digitalizar y replicar todos los objetos que necesites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" gallery" id="galeria">
+            <h2 class="subtitulo">
+                Galeria
+            </h2>
+            <div class="contenedor-galeria">
+                <img src="img/img1.jpg" alt=""  class="img-galeria"> 
+                <img src="img/img2.jpg" alt="" class="img-galeria">
+                <img src="img/img3.jpg" alt="" class="img-galeria">
+                <img src="img/zmorph-multitool-3d-printer-NGg01QGp_cY-unsplash.jpg" alt="" class="img-galeria">
+            </div>
+        </section>
+        <!-- <section class="imagen-light">
+
+        </section> -->
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en: </h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/artificial_intelligence_isometric.svg" alt="">
+                    <h3 class="n-experts">En Tekné 3D te ayudamos a dar forma a tus ideas, para ello contamos con herramientas de software profesional que ofrece increibles resultados.</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/logistics.svg" alt="">
+                    <h3 class="n-experts">IMPRESION PROTOTIPOS</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/vr.svg" alt="">
+                    <h3 class="n-experts">DISEÑO 3D</h3>
+                </div>
+            </section>
+        </section>
+        <section>
+            <div id="mapid"></div>
+        </section>
+    </main>
+    
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <!-- <h2 class="brand">tekne 3d</h2>
+                <p>somos expertos en la creacion de tus sueños</p> -->
+                <div class="div" id="img">
+                    <h2 class="brand" id="brand"></h2>
+                    <p id="parrafo"></p>
+                    <img  id="icon" src="" alt="">
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <!-- <box-icon name='menu'></box-icon>
+    <script src="js/menu.js"></script> -->
+
+</body>
+</html>
